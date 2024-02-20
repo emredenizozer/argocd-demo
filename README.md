@@ -102,6 +102,51 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
     <br />
     <br />
 
+### How to install ArgoCD CLI in Mac?
+- There are 3 options to interact with ArgoCD
+    - CLI
+    - Web UI
+    - Rest/gRPC API
+    <br />
+    <br />
+- CLI is useful when you need to interact with ArgoCD in CI/CD pipelines. You can manage everything by using it such as:
+    - Managing applications
+    - Managing repos
+    - Managing clusters
+    - Managing projects
+    - Doing administrative tasks etc.
+
+- ArgoCD CLI can be installed into all platforms. In order to install it on Mac, the below command can be used:
+    ```
+    brew install argocd
+    ```
+    <br />
+
+- After installing it, it is needed to login to ArgoCD Server before using any commands. The login command is as follows:
+    <br />
+
+    ```
+    argocd login <ARGOCD_SERVER>
+    ```
+    <br />
+
+    In order to login to the locally running instance enter the command below in your terminal:
+    <br />
+
+    ```
+    argocd login localhost:8080
+    ```
+    <br />
+
+    It will prompt to enter username and password. They are the same as the ones that you used to login to the Web UI. Enter those values and it will login.
+
+- After successful login, you can try using commands like:
+
+    ```
+    argocd cluster list
+    ```
+    <br />
+    
 
 
 
