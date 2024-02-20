@@ -10,7 +10,7 @@ In order to manage infrastructure and application configurations aligned with Gi
 1. Install Docker Desktop for Apple Silicon from [here](https://docs.docker.com/desktop/install/mac-install/).
 2. Run Docker Desktop, click on the "Settings" button on top right and enable Kubernetes as depicted in the image below:
 
-    <img src="dockerDesktopSettings.png" alt="Enable Kubernetes" width="600"/>
+    <img src="./images/dockerDesktopSettings.png" alt="Enable Kubernetes" width="600"/>
     <br />
     <br />
 
@@ -30,7 +30,7 @@ In order to manage infrastructure and application configurations aligned with Gi
 
     The result of the commands should look like:
 
-    <img src="commandResult.png" alt="Get Pods" width="600"/>
+    <img src="./images/commandResult.png" alt="Get Pods" width="600"/>
     <br />
     <br />
 
@@ -63,7 +63,7 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
 
     The result of the commands should look like:
 
-    <img src="getSecret.png" alt="Get Secret" width="600"/>
+    <img src="./images/getSecret.png" alt="Get Secret" width="600"/>
     <br />
     <br />
 
@@ -79,7 +79,7 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
 
     The result of the commands should look like:
 
-    <img src="getSecretDecoded.png" alt="Get Secret" width="600"/>
+    <img src="./images/getSecretDecoded.png" alt="Get Secret" width="600"/>
     <br />
     <br />
     <b>Pay attention that there is an extra "%" sign at the end.</b> It is added when the encoded text does not include new line character at the end. Therefore the decoded admin password is without the "%" sign which is <b>w68SPMKlm1lIC60q</b>.
@@ -90,7 +90,7 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
     <br />
     <br />
 
-    <img src="argocdLoginPage.png" alt="Get Secret" width="600"/>
+    <img src="./images/argocdLoginPage.png" alt="Get Secret" width="600"/>
     <br />
     <br />
 
@@ -98,7 +98,7 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
     <br />
     <br />
 
-    <img src="argocdHomepage.png" alt="Get Secret" width="600"/>
+    <img src="./images/argocdHomepage.png" alt="Get Secret" width="600"/>
     <br />
     <br />
 
