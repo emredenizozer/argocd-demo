@@ -57,7 +57,7 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
 - Get the initial admin password by using the command below:
 
     ```
-    kubectl get secret -n argocd argocd-initial-admin-secret -o yaml
+    kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
     ```
     <br />
 
@@ -66,21 +66,7 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
     <img src="./images/getSecret.png" alt="Get Secret" width="600"/>
     <br />
     <br />
-
-    The password is encoded in base64 format. Therefore it is needed to decode it by:
-
-    ```
-    echo dzY4U1BNS2xtMWxJQzYwcQ== | base64 -d
-    ```
-    <br />
-
-    Here is the output:
-    <br />
-
-    <img src="./images/getSecretDecoded.png" alt="Get Secret" width="600"/>
-    <br />
-    <br />
-    <b>Pay attention that there is an extra "%" sign at the end.</b> It is added when the encoded text does not include new line character at the end. Therefore the decoded admin password is without the "%" sign which is <b>w68SPMKlm1lIC60q</b>.
+    The decoded admin password is <b>w68SPMKlm1lIC60q</b>.
     <br />
     <br />
 
