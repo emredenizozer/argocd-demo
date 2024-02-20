@@ -77,8 +77,6 @@ By default ArgoCD is not exposed (with external endpoint) outside the cluster. E
     Here is the output:
     <br />
 
-    The result of the commands should look like:
-
     <img src="./images/getSecretDecoded.png" alt="Get Secret" width="600"/>
     <br />
     <br />
