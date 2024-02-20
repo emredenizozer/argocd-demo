@@ -14,7 +14,7 @@ In order to manage infrastructure and application configurations aligned with Gi
     <br />
     <br />
 
-3. Then enter the commands below in your terminal:
+3. Then enter the commands below in your terminal for Non High Availability (Non HA) setup:
 
     ```
     minikube start
